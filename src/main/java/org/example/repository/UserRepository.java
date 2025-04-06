@@ -26,7 +26,7 @@ public class UserRepository implements EntityRepository<User> {
             stmt.executeUpdate();
 
         } catch (SQLException e) {
-            System.out.println("Erro ao salvar usuário: " + e.getMessage());
+            System.out.println("Error saving user: " + e.getMessage());
         }
     }
 
@@ -51,7 +51,7 @@ public class UserRepository implements EntityRepository<User> {
             }
 
         } catch (SQLException e) {
-            System.out.println("Erro ao buscar usuário por ID: " + e.getMessage());
+            System.out.println("Error retrieving user by ID: " + e.getMessage());
         }
 
         return Optional.empty();
@@ -77,7 +77,7 @@ public class UserRepository implements EntityRepository<User> {
             }
 
         } catch (SQLException e) {
-            System.out.println("Erro ao listar usuários: " + e.getMessage());
+            System.out.println("Error listing users: " + e.getMessage());
         }
 
         return users;
@@ -94,7 +94,7 @@ public class UserRepository implements EntityRepository<User> {
             stmt.executeUpdate();
 
         } catch (SQLException e) {
-            System.out.println("Erro ao deletar usuário: " + e.getMessage());
+            System.out.println("Error deleting user: " + e.getMessage());
         }
     }
 }

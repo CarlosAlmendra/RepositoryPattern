@@ -14,7 +14,7 @@ public class DatabaseInitializer {
             stmt.execute(sql);
 
         } catch (Exception e) {
-            System.out.println("Erro ao inicializar o banco de dados: " + e.getMessage());
+            System.out.println("Error initializing database: " + e.getMessage());
         }
     }
 }
